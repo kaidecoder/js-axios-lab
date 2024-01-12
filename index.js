@@ -5,6 +5,7 @@ import axios from "axios";
 let breedSelect = document.getElementById("breedSelect");
 // The information section div element.
 const infoDump = document.getElementById("infoDump");
+
 // The progress bar div element.
 const progressBar = document.getElementById("progressBar");
 // The get favourites button element.
@@ -13,6 +14,7 @@ const getFavouritesBtn = document.getElementById("getFavouritesBtn");
 // Step 0: Store your API key here for reference and easy access.
 const API_KEY =
   "live_f442WpIpdmrvNYLgvqJ0J8GK7oIq3nbSIci46khmdQGVzslHpzf6QNYWy5vjyM9A";
+
 
 /**
  * 1. Create an async function "initialLoad" that does the following:
@@ -41,9 +43,11 @@ const API_KEY =
 /**
  * 3. Fork your own sandbox, creating a new one named "JavaScript Axios Lab."
  */
+
 (async function initialLoad() {
   const response = await axios("https://api.thecatapi.com/v1/breeds");
   console.log(response);
+
   if (response.data.length === 0) {
     console.log("No breeds found!");
     return;
@@ -55,8 +59,6 @@ const API_KEY =
     option.innerHTML = `${toTitleCase(breed.name)}`;
     breedSelect = document.getElementById("breedSelect");
     breedSelect.appendChild(option);
-
-    
   });
 
   breedSelect.addEventListener("change", async function (e) {
@@ -84,6 +86,8 @@ const API_KEY =
     Carousel.start();
   });
 })();
+
+console.log(breed)
 
 function toTitleCase(str) {
   return str.charAt(0).toUpperCase() + str.substr(1);

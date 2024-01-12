@@ -12226,6 +12226,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var breedSelect = document.getElementById("breedSelect");
 // The information section div element.
 var infoDump = document.getElementById("infoDump");
+
 // The progress bar div element.
 var progressBar = document.getElementById("progressBar");
 // The get favourites button element.
@@ -12261,6 +12262,7 @@ var API_KEY = "live_f442WpIpdmrvNYLgvqJ0J8GK7oIq3nbSIci46khmdQGVzslHpzf6QNYWy5vj
 /**
  * 3. Fork your own sandbox, creating a new one named "JavaScript Axios Lab."
  */
+
 (function () {
   var _initialLoad = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
     var response;
@@ -12335,6 +12337,7 @@ var API_KEY = "live_f442WpIpdmrvNYLgvqJ0J8GK7oIq3nbSIci46khmdQGVzslHpzf6QNYWy5vj
   }
   return initialLoad;
 })()();
+console.log(breed);
 function toTitleCase(str) {
   return str.charAt(0).toUpperCase() + str.substr(1);
 }
@@ -12645,7 +12648,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56634" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52510" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
